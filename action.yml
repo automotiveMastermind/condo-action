@@ -1,0 +1,5 @@
+name: 'condo'
+description: "the build system for <any> project"
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
