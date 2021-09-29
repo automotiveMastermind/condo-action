@@ -5,4 +5,4 @@ https://github.com/automotiveMastermind/condo
 
 ## Example usage
 
-uses: actions/condo-action@v1
+uses: automotivemastermind/condo-action@init
