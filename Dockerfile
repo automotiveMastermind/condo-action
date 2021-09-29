@@ -12,6 +12,7 @@ FROM mcr.microsoft.com/dotnet/sdk:5.0-alpine
 ARG WORKSPACE=/github/workspace
 
 COPY --from=builder /artifacts/publish/cli /usr/local/condo
+COPY --from=golang:1.17-alpine /usr/local/go/ /usr/local/go/
 
 RUN ln -s /usr/local/condo/condo /usr/local/bin
 
